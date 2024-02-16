@@ -1,6 +1,7 @@
 Alas = float(input ("Masukan Jumlah Alas : "))
 Tinggi = float(input ("Masukan Jumlah Tinggi : "))
 
+#Sisi setiap segitiga
 SisiA = 20
 SisiB = 12
 SisiC = 10
