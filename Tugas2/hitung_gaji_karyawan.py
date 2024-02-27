@@ -1,4 +1,4 @@
-gaji_pokok = int(input("Masukan Gaji pokok karyawan : "))
+gaji_pokok = float(input("Masukan Gaji pokok karyawan : "))
 
 #Elemen elemen
 uang_transport_harian = 125.000
