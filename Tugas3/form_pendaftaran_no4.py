@@ -1,6 +1,6 @@
 tahunSekarang = 2024
 
-Nama = input("Masukan Nama Anda : ")
+nama = input("Masukan Nama Anda : ")
 tempatLahir = input("Masukan Tempat Lahir Anda : ")
 tanggalLahir = float(input("Masukan Tanggal Lahir Anda : "))
 tahunLahir = float(input("Masukan Tahun Lahir Anda : "))
