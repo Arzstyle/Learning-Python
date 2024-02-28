@@ -4,9 +4,9 @@ Nama = input("Masukan Nama Anda : ")
 tempatLahir = input("Masukan Tempat Lahir Anda : ")
 tanggalLahir = float(input("Masukan Tanggal Lahir Anda : "))
 tahunLahir = float(input("Masukan Tahun Lahir Anda : "))
-nilaiEnglish = float(input("Masukan Nilai Anda : "))
-nilaiMtk = float(input("Masukan Nilai Anda : "))
-nilaiIndonesia = float(input("Masukan Nilai Anda : "))
+nilaiEnglish = float(input("Masukan Nilai English : "))
+nilaiMtk = float(input("Masukan Nilai MTK : "))
+nilaiIndonesia = float(input("Masukan Nilai Indonesia : "))
 jenisKelamin = input("Masukan Jenis Kelamin Anda : ")
 
 rataRata = (nilaiEnglish + nilaiIndonesia + nilaiMtk) / 3
