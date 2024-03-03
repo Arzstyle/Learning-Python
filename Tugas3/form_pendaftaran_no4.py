@@ -1,25 +1,27 @@
-tahunSekarang = 2024
+tahun_sekarang = 2024
 
 nama = input("Masukan Nama Anda : ")
-tempatLahir = input("Masukan Tempat Lahir Anda : ")
-tanggalLahir = float(input("Masukan Tanggal Lahir Anda : "))
-tahunLahir = float(input("Masukan Tahun Lahir Anda : "))
-nilaiEnglish = float(input("Masukan Nilai English : "))
-nilaiMtk = float(input("Masukan Nilai MTK : "))
-nilaiIndonesia = float(input("Masukan Nilai Indonesia : "))
-jenisKelamin = input("Masukan Jenis Kelamin Anda : ")
+tempat_lahir = input("Masukan Tempat Lahir Anda : ")
+tanggal_lahir = float(input("Masukan Tanggal Lahir Anda : "))
+tahun_lahir = float(input("Masukan Tahun Lahir Anda : "))
+nilai_english = float(input("Masukan Nilai English : "))
+nilai_mtk = float(input("Masukan Nilai MTK : "))
+nilai_indonesia = float(input("Masukan Nilai Indonesia : "))
+jenis_kelamin = input("Masukan Jenis Kelamin Anda : ")
 
-rataRata = (nilaiEnglish + nilaiIndonesia + nilaiMtk) / 3
-umur = tahunSekarang - tahunLahir
+rataRata = float(nilai_english + nilai_indonesia + nilai_mtk) / 3
+umur = tahun_sekarang - tahun_lahir
 
 if umur >= 24:
-  print("Umur anda melebihi batas pendaftaran")
-elif rataRata >= 80 and jenisKelamin == "laki laki":
-  print(f"Dengan rata rata : {rataRata:.2f} dan berjenis kelamin {jenisKelamin} disarankan masuk Jurusan Teknik Informatika ")
-elif rataRata >= 80 and jenisKelamin == "Perempuan":
-  print(f"Dengan rata rata : {rataRata:.2f} dan berjenis kelamin {jenisKelamin} disarankan masuk Jurusan Sistem Informasi ")
+  print(f"Umur anda yaitu {umur} tahun, melebihi batas umur pendaftaran yang telah ditentukan.")
+elif rataRata >= 80:
+    if jenis_kelamin == "laki laki":
+       jurusan = "Teknik Informatika"
+       print(f"{nama}, Selamat! Dengan nilai rata rata : {rataRata:.2f}, dan berjenis kelamin {jenis_kelamin}, Anda disarankan masuk Jurusan Teknik Informatika. ")
+    elif jenis_kelamin == "Perempuan":
+       jurusan = "Sistem Informasi"
+       print(f"{nama}, Selamat! Dengan nilai rata rata : {rataRata:.2f}, dan berjenis kelamin {jenis_kelamin}, Anda disarankan masuk Jurusan Sistem Informasi. ")
+    else:
+      print("Mohon maaf Jurusan yang disarankan tidak diketahui karena jenis kelamin tidak valid. ")
 else:
-  print("Silahkan masuk Jurusan DKV") 
-
-  
-
+  print(f"Maaf, nilai rata rata anda tidak mencapai, yaitu {rataRata}, Jadi anda disarankan masuk jurusan DKV")
