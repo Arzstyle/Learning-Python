@@ -1,4 +1,4 @@
-nilai = int(input("Masukan Nilai : "))
+nilai = int(input("Masukan Nilai Anda : "))
 
 if nilai >= 0 and nilai <= 50:
   print("Nilai Anda E")
@@ -8,7 +8,5 @@ elif nilai >= 60 and nilai <= 70:
   print("Nilai Anda C")
 elif nilai >= 70 and nilai <= 80:
   print("Nilai Anda B")
-elif nilai >= 80 and nilai <=100:
-  print("Nilai Anda A")
 else:
-  print("Nilai Anda Tidak dapat Di Input")
+  print("Nilai Anda A")
