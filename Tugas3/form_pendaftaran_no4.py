@@ -12,7 +12,7 @@ jenis_kelamin = input("Masukan Jenis Kelamin Anda : ")
 rataRata = float(nilai_english + nilai_indonesia + nilai_mtk) / 3
 umur = tahun_sekarang - tahun_lahir
 
-if umur >= 24:
+if umur >= 25:
   print(f"Umur anda yaitu {umur} tahun, melebihi batas umur pendaftaran yang telah ditentukan.")
 elif rataRata >= 80:
     if jenis_kelamin == "laki laki":
