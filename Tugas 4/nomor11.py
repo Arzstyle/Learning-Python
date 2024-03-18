@@ -6,36 +6,28 @@
 
 # Ke 4 Kriteria diatas akan diterima hanya dan hanya jika tidak memiliki anggota tubuh yang cacat.
 
-anggota_tubuh_cacat = input("Apakah bagian tubuh anda memiliki cacat? " )
-usia = int(input("Masukan Umur Anda : "))
+anggota_tubuh_cacat = input("Apakah bagian tubuh anda cacat? (ya/tidak) : " )
+
+if anggota_tubuh_cacat == "ya": 
+  print("Anda tidak lolos karena memiliki anggota tubuh yang cacat")
+  exit()
+
 jenis_kelamin = input("Masukan Jenis Kelamin Anda : ")
 berat_badan = int(input("Masukan Berat Badan Anda : "))
 tinggi_badan = int(input("Masukan Tinggi Badan Anda : "))
-usia = int(input("Masukan Umur Anda : "))
-rata_rata = int(input("Masukan Rata Rata Akademis : "))
-skill = input("Apakah Anda Memiliki Skill? : ")
+usia = int(input("Masukan Usia Anda : "))
+nilai_akademis = int(input("Masukan Rata Rata Akademis : "))
+have_skill = input("Apakah Anda Memiliki Skill? : ").split()
 
 
-if anggota_tubuh_cacat == "memiliki": 
-  print("Anda tidak lolos karena memiliki anggota tubuh yang cacat")
+if any(skill in have_skill for skill in ["Menembak" , "Memanah", "Berkuda"]):
+    print(f"Anda lulus kriteria 4!, berjenis kelamin {jenis_kelamin}, karena kamu memiliki skill {have_skill}.")
+elif nilai_akademis  >= 90 and usia <= 30:
+    print(f"Anda lulus Kriteria 3!, berjenis kelamin {jenis_kelamin}, dengan rata rata akademis : {nilai_akademis}, dan berusia {usia} Tahun.")
+elif jenis_kelamin == "perempuan" and berat_badan >= 45 and berat_badan <= 50 and tinggi_badan >= 165 and usia <= 20:
+    print(f"Anda Lulus Kriteria 1!, berjenis kelamin {jenis_kelamin}, dengan berat badan {berat_badan} kg, dan Tinggi {tinggi_badan}, dan berusia {usia}") 
+elif jenis_kelamin == "laki laki" and berat_badan <= 70 and tinggi_badan >= 170 and usia <= 25: 
+    print(f"Anda Lulus Kriteria 2!, berjenis kelamin {jenis_kelamin}, dengan berat badan {berat_badan} kg, dan Tinggi {tinggi_badan}, dan berusia {usia}") 
 else:
-  if jenis_kelamin == "Perempuan" and berat_badan >= 45:
-    if berat_badan <= 50 and tinggi_badan >= 165 and usia <= 20: 
-      print(f"Anda Lulus Kriteria 1!, bejernis kelamin {jenis_kelamin}, dengan berat badan {berat_badan} kg, dan Tinggi {tinggi_badan}, dan berusia {usia} Tahun.")
-    else:
-      print(f"Anda tidak memenuhi kriteria ")
-  elif jenis_kelamin == "Laki laki" and berat_badan <= 70:
-    if tinggi_badan >= 170 and usia <= 25:
-      print(f"Anda Lulus Kriteria 2!, bejernis kelamin {jenis_kelamin}, dengan berat badan {berat_badan} kg, dan Tinggi {tinggi_badan}, dan berusia {usia} Tahun.")
-    else:
-      print(f"Anda tidak memenuhi kriteria ")
-  if jenis_kelamin == "Laki laki" or jenis_kelamin == "Perempuan":      
-    if rata_rata >= 90 and usia <= 30:
-      print(f"Anda lulus kriteria 3!, bejernis kelamin {jenis_kelamin}, dengan rata rata akademis : {rata_rata}, dan berusia {usia} Tahun.")
-    else:
-      print("Anda tidak memenuhi kriteria 3")
-  if jenis_kelamin == "Laki Laki" or jenis_kelamin == "Perempuan": 
-    if skill == "Menembak" or skill == "Memanah" or skill == "Berkuda":
-      print(f"Anda lulus kriteria 4, Anda bejernis kelamin {jenis_kelamin}, karena kamu memiliki skill {skill}.")
-    else:
-      print("Anda tidak memenuhi kriteria ")
+    print("Maaf anda tidak lolos karena tidak memenuhi beberapa syarat")
+  
