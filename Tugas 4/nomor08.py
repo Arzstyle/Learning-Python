@@ -1,7 +1,7 @@
 #Program yang mensimulasikan permainan batu-gunting-kertas antara dua pemain dan menentukan pemenangnya.
 
 p1 = input("Player 1 memilih : ")
-p2 = input("Computer memilih : ")
+p2 = input("Player 2 memilih : ")
 
 pick_1 = "batu"
 pick_2 = "gunting" 
