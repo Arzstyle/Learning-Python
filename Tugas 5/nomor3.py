@@ -6,4 +6,4 @@ for i in range(3):
   print(f"{a} * {b} = {result}")
   b += 1
   
-  
+print()
