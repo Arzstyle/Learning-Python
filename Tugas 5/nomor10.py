@@ -13,4 +13,5 @@ for i in range(5):
         print("3", end=" ")
   print()
   length -= 1
+  
 print()
