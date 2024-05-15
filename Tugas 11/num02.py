@@ -2,18 +2,7 @@
 # Contoh parameter: my_list = [1, 2, 3, 4, 5]
 # Contoh output: 15
 
-# def menambahkan(my_list):
-#     total = 0
-#     for angka in my_list:
-#         total += angka
-#     return total
+def menambahkan(my_list):
+    return sum(my_list)
 
-# print(menambahkan([1, 2, 3, 4, 5]))
-
-
-
-def menambahkan(mylist):
-    return sum(mylist)
-
-print(menambahkan([1, 2, 3, 4, 5]))
-    
+print(menambahkan([1, 2, 3, 4, 5]))    
