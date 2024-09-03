@@ -9,3 +9,4 @@ honor_lembur = 600_000
 total_gaji = gaji_pokok + (uang_transport_harian + uang_makan_harian + tunjangan_jabatan + honor_lembur)
 
 print(f"Total keseluruhan gaji karyawan adalah :{total_gaji: 1,.2f} rupiah.")
+
